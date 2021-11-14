@@ -9,6 +9,7 @@
   --third-text-color: #ffffff;
   --adress-text-color: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
+  --font-family: "Roboto", sans-serif;
 }
 
 .visually-hidden {
@@ -31,7 +32,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   color: var(--primary-text-color);
 }
 
@@ -160,12 +161,12 @@ img {
   fill: var(--primary-title-color);
 }
 
-.active-link {
+.active-link.header__menu-link {
   position: relative;
   color: var(--accent-color);
 }
 
-.active-link::after {
+.active-link.header__menu-link::after {
   content: "";
   display: block;
   position: absolute;
@@ -434,7 +435,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #f79393;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
